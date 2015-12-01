@@ -6,4 +6,37 @@
     <div id="operaciones">
     </div>
 </div>
-<!-- Fin Listado Tareas -->
+<!-- End -->
+<!-- Acción Tarea: Add Insert Delete -->
+<div data-role="view" id="accionOperacion" data-title="Detalle">
+    <div data-role="navbar">
+        <span data-role="view-title"></span>
+        <a data-role="button" data-align="right" href="#operaciones1"><span class="k-icon k-i-undo"></a>
+    </div>
+    <ul id="det-op" data-role="listview" class="col-md-12">
+    </ul>
+</div>
+<!--End-->
+<!-- Template Detalle de Operación -->
+<script type="text/x-kendo-tmpl" id="tempOP">
+    <div class="list-group">
+        <button type="button" class="list-group-item font-cuerpo"><strong>Tipo de Órden: </strong>#:tipoOrden#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Fecha Creación: </strong>#:fechaCreacion#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Id Operación: </strong>#:idOperacion#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Cliente: </strong>#:cliente#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Despachador: </strong>#:despachador#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Almacén: </strong>#:almacen#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Núm órden: </strong>#:numOrden#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Tipo Carga: </strong>#:tipoCarga#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Núm Matrícula: </strong>#:numMatricula#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Cantidad: </strong>#:cantidad#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Tiempo Transcurrido: </strong>#:tiempoTranscurrido#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Fecha Inicio: </strong>#:fechaInicio#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Actividad: </strong>#:actividad#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Hora Inicio: </strong>#:horaInicio#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Hora Fin: </strong>#:horaFin#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Estado: </strong>#:estado#</button>
+        <button type="button" class="list-group-item font-cuerpo"><strong>Detalle: </strong>#:detalle#</button>
+    </div>
+</script>
+<!--End -->

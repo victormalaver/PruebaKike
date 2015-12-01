@@ -364,7 +364,7 @@ function accionTarea(accion) {
     notificationElement.kendoNotification();
     var notificationWidget = notificationElement.data("kendoNotification");
     //end
-    
+
     var valido = true;
     $('#txtidc, #txtuserid, #txtidtt, #txtobserv, #txtdetalle, #txtflimite').parent().parent().removeClass("has-error");
     $('.k-multiselect-wrap.k-floatwrap').css("border-color", "#ccc");
@@ -437,7 +437,7 @@ function accionTarea(accion) {
                     });
                 };
                 if (valido) {
-                    notificationWidget.show((accion == "insert" ? "Se agregó la nueva tarea"+$('#txtidtt option:selected').text() : "Se editó la tarea"+$('#txtidtt option:selected').text()), "success");
+                    notificationWidget.show((accion == "insert" ? "Se agregó la nueva tarea" + $('#txtidtt option:selected').text() : "Se editó la tarea" + $('#txtidtt option:selected').text()), "success");
                     var grid = $("#tareas").data("kendoGrid");
                     grid.dataSource.read();
                     window.location.href = "#tareas1";
@@ -500,10 +500,10 @@ function accionTarea(accion) {
                 if (valido) {
                     switch (accion) {
                         case "insert":
-                            notificationWidget.show("Se agregó la tarea: "+ $('#txtidtt option:selected').text(), "success");
+                            notificationWidget.show("Se agregó la tarea: " + $('#txtidtt option:selected').text(), "success");
                             break;
                         default:
-                            notificationWidget.show((accion == "delete" ? "Se eliminó la tarea: "+ $('#txtidtt option:selected').text() : "Se guardó la información de: "+$('#txtidtt option:selected').text() ), "success");
+                            notificationWidget.show((accion == "delete" ? "Se eliminó la tarea: " + $('#txtidtt option:selected').text() : "Se guardó la información de: " + $('#txtidtt option:selected').text()), "success");
                     }
                     var grid = $("#tareas").data("kendoGrid");
                     grid.dataSource.read();
@@ -594,6 +594,7 @@ function tag_estado() {
 //add edit delete tipo de tarea
 function accionTT(tipo) {
     $('#modalAddTipoTarea').data('kendoMobileModalView').open();
+    kendo.fx($("#modalAddTipoTarea")).zoom("in").play(); //Sirve para eliminar el bug del click en la misma posición del btn cancelar, que hace que al seleccionar se cierre inmediatamente el modal
     $("#btnTT").removeAttr("disabled");
     switch (tipo) {
         case "tipoUpdate":
@@ -761,7 +762,7 @@ function accionTipoTarea(accion) {
             if (data[0].Ejecucion == 0) {
                 $("#modalAddTipoTarea").data("kendoMobileModalView").close();
                 getSelectTipoTarea("add");
-                notificationWidget.show("Se agregó nuevo tipo de tarea: "+$('#txtnombre').val() , "success");
+                notificationWidget.show("Se agregó nuevo tipo de tarea: " + $('#txtnombre').val(), "success");
 
                 $('#administrarTipoTareas').data('kendoGrid').dataSource.read();
                 $('#administrarTipoTareas').data('kendoGrid').refresh();
