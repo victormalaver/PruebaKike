@@ -1,0 +1,34 @@
+<div id="homeView" data-role="view" data-title="Home View" data-layout="main" data-model="app.homeView" data-show="app.homeView.onShow" data-after-show="app.homeView.afterShow">
+    <!-- START_CUSTOM_CODE_homeView -->
+    <!-- END_CUSTOM_CODE_homeView -->
+
+<!-- application views will be rendered here -->
+
+          <ul data-role="listview" data-style="inset">
+              <li>
+                  <label>
+                      Username:
+                      <input type="text" id="txtsUsuario" style="border: solid;"/>
+                  </label>
+              </li>
+              <li>
+                  <label>
+                      Password:
+                      <input type="password" id="txtsContrasenia" style="border: solid;" />
+                  </label>
+              </li>
+              <li>
+                  <div id="GoLogin" onclick="Login();" style="border: solid;">Login</div>
+              </li>
+              <li>
+                  <label>Login Response:</label>  <span id="LoginResponse"></span>
+              </li>
+              <li>
+                  <label>Status Post:</label>  <span id="StatusPost"></span>
+              </li>
+              <li>
+                  <label>XHR Obj:</label>  <span id="XHRObj"></span>
+              </li>
+          </ul>
+
+</div>

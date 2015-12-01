@@ -1,0 +1,73 @@
+<!-- Inicio formulario -->
+<style>
+    html,
+    body,
+    #ListaOrdenes,
+    #grid {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        height: 100%;
+        /* DO NOT USE !important for setting the Grid height! */
+    }
+    html {
+        overflow: hidden;
+        font: 13px sans-serif;
+    }
+</style>
+<div id="ListaOrdenes" data-role="view" data-title="Seguimiento de Tareas" data-layout="main" data-model="app.PruebaTareas" data-show="app.PruebaTareas.onShow" data-after-show="app.PruebaTareas.afterShow">
+    <div id="grid"></div>
+    <script>
+        var gridElement = $("#grid");
+
+        function resizeGrid() {
+            gridElement.data("kendoGrid").resize();
+        }
+
+        $(window).resize(function () {
+            resizeGrid();
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: {
+                type: "odata",
+
+                transport: {
+                    read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            OrderID: {
+                                type: "number"
+                            },
+                            ShipName: {
+                                type: "string"
+                            },
+                            ShipCity: {
+                                type: "string"
+                            }
+                        }
+                    }
+                },
+                pageSize: 10,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true
+            },
+            filterable: true,
+            sortable: true,
+            scrollable: false,
+            resizable: true,
+            pageable: true,
+            columns: [{
+                    field: "OrderID",
+                    filterable: false,
+                    width: 200
+        },
+                  "ShipName",
+                  "ShipCity"
+                 ]
+        });
+    </script>
+</div>

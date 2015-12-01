@@ -1,0 +1,270 @@
+.logoBase
+{
+    width: 43%;
+    background-color: white;
+    margin: 0px 0px -11px 0px;
+}
+
+.footerUsuario
+{
+    float: left;
+    padding: 30px 0px 0px 10px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.AlertaTareas1
+{
+    /*Rojo*/
+    background-color: #f00 !important;
+    color: #FFFFFF;
+    /*border: black 1px solid;*/
+}
+
+.AlertaTareas2
+{
+    /*Naranja*/
+    background-color: #EF7A1D !important;
+    color: #FFFFFF;
+}
+
+#id2 , #id5 {
+    background-color: #EF7A1D !important;
+    color: #FFFFFF;
+}
+
+#id4 {
+   	background-color: #f00 !important;
+    color: #FFFFFF;
+}
+
+/*#tareas1 div {
+  	background-image: url(../images/grid.mobile.jpg) !important;
+    background-repeat: round !important;  
+}*/
+
+
+/* STYLE FUNCIONALIDAD 01*/
+.btnDetMorosidadUtilizacionLinea{
+    border-style: solid;
+    border-color: Black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    background-color: #0053B3;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.btnLlamar{
+    border-style: solid;
+    border-color: Black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    background-color: #449d44;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;    
+}
+
+    summary::-webkit-details-marker {
+    	display: none
+    }
+    
+    summary:before {
+      background: green;
+      border-radius: 5px;
+      content: "[+]";
+      color: #FFF;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 10px 0 0;
+      padding-top: 1px;
+      padding-left: 1px;
+      padding-right: 2px;
+      padding-bottom: 2px;
+      text-align: center;
+    }
+    
+    details[open] summary:before {
+     background: red;
+      border-radius: 5px;
+      content: "[--]";
+      color: #FFF;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 0 10px 0 0;
+      padding: 0;
+      padding-top: 1px;
+      padding-left: 1px;
+      padding-right: 2px;
+      padding-bottom: 2px;
+    }
+
+.StandardDetails details summary{
+    display: block;
+}
+
+.ItemLstCliente{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.MarginTop7 {
+     margin-top: 7px;   
+}
+
+.MarginBotton5 {
+     margin-bottom: 5px;
+}
+
+.BorderItemLstCliente{
+    /*margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    min-height:40px;
+    text-align: justify;*/
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    min-height: 40px;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.DetCondPagoServicio{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right:3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 45px;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    /*vertical-align: middle;*/
+}
+
+.btnDetPopUp{
+    border-style: solid;
+    border-color: Black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    background-color: #0053B3;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.PopUpCondPago{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%; 
+}
+
+.PopUpTarifas{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.TitlePopUp{
+    min-width: 100%;
+    background-color: #0053B3;
+    color: #FFFFFF;    
+    font-size: large;
+    text-align: center;
+}
+
+/*
+div {
+   position:absolute; height:100%; 
+   display: table;
+}
+h1 {
+   display: table-cell;
+   vertical-align: middle;
+}
+*/
+
+
+.container-fluid { 
+    border-bottom: 1px solid !important;
+}
+
+#lstCliente {
+    margin: 0px;
+    padding: 0px;
+}
+
+#lstCliente div {
+        margin: 5px 0px !important
+}
+
+/*
+naranja : #EF7A0D
+
+azul: #0053B3
+
+div {
+   position:absolute; height:100%; 
+   display: table;
+}
+h1 {
+   display: table-cell;
+   vertical-align: middle;
+}
+*/
+
+/* standar */
+
+/* para barra navegacion superior */ 
+.font-nav-bar {
+    font-size: 20px !important;
+    font-weight: lighter !important;
+}
+
+/* para los botones */
+.font-boton {
+	font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+.font-cuerpo {
+	font-size: 13px !important;
+    font-weight: normal !important;
+}
+
+.centrar {
+    text-align:center !important;
+} 
+
+/* standar */
+
+/*  funcionalidad 2 */
+
+.input-group-addon {
+    width: 55% !important;
+}
+
+.input-group input {
+    text-align:center;
+}
